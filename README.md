@@ -1,20 +1,15 @@
-# Nuxt 3 Minimal Starter
+# Movie Web
+It is recommended to use node js version 18.13.0 
+## Link Live Preview
+to access it directly can be seen in https://movie-web-kappa.vercel.app/
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
+## Setup Local
 
 Make sure to install the dependencies:
 
 ```bash
-# yarn
-yarn install
-
 # npm
 npm install
-
-# pnpm
-pnpm install
 ```
 
 ## Development Server
@@ -32,11 +27,3 @@ Build the application for production:
 ```bash
 npm run build
 ```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
