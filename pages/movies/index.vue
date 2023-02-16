@@ -2,19 +2,8 @@
   <div>
     <div class="section-hero h-[389px] bg-white/[.05] pt-[119px] px-20">
       <BaseTitleSection title="Movies" text-size="text-[36px]" />
-      <div class="mt-[59] flex justify-between">
-        <div
-          class="w-[240px] h-[586px]"
-          style="
-            background: linear-gradient(
-              180deg,
-              #0e1723 0%,
-              rgba(30, 35, 42, 0) 100%
-            );
-          "
-        >
-          sort
-        </div>
+      <div class="mt-[59px] flex justify-between">
+        <BaseCardSort />
         <div>
           <div class="grid grid-cols-4 gap-x-5 gap-y-9">
             <BaseCardMovie
