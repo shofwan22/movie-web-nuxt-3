@@ -2,8 +2,8 @@
   <div>
     <div class="w-[220px] h-[330px] relative cursor-pointer group/item">
       <img
-        v-if="image"
-        :src="`/_nuxt/assets/images/${image}`"
+        v-if="chooseImage"
+        :src="chooseImage"
         width="220"
         height="330"
         alt=""
@@ -64,5 +64,14 @@ const props = defineProps({
     type: String,
     default: '',
   },
+});
+const allImages = import.meta.glob('~/assets/images/*.png');
+const chooseImage = ref('');
+
+onMounted(() => {
+  console.log('masuk', allImages[`/assets/images/${props.image}`]);
+  allImages[`/assets/images/${props.image}`]().then((mod) => {
+    chooseImage.value = mod.default;
+  });
 });
 </script>
