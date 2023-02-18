@@ -69,7 +69,6 @@ const allImages = import.meta.glob('~/assets/images/*.png');
 const chooseImage = ref('');
 
 onMounted(() => {
-  console.log('masuk', allImages[`/assets/images/${props.image}`]);
   allImages[`/assets/images/${props.image}`]().then((mod) => {
     chooseImage.value = mod.default;
   });
