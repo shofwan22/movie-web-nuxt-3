@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="section-carousel h-[597px]"></div>
+    <div class="section-carousel h-[597px]">
+      <BaseCarouselMovie />
+    </div>
     <div class="section-base h-[333px] bg-white/[.05] px-20 pt-[89px]">
       <div class="flex items-center justify-between">
         <BaseTitleSection title="Discover Movies" />
